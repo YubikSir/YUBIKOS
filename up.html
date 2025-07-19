@@ -1,0 +1,211 @@
+<html lang="id"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="website has being fucked y yubikos">
+  <meta name="description" content="opps ! your security get down">
+  <meta name="keywords" content=",wordpress,website,whitehat,blackhat,defacer,hack,mirror">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="60 days">
+  <meta name="author" content="WE FORCE TO BE">
+  <meta property="og:image" content="https://univjoy.com/uploads/gallery/120_1751439493.png">
+  <meta name="theme-color" content="#000">
+  <title>DI RETAS - by YUBIKOS</title>
+  <link rel="icon" type="image/png" href="https://univjoy.com/uploads/gallery/120_1751439493.png">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Courier New', monospace;
+    }
+
+    body {
+      background: #000 url('https://univjoy.com/uploads/gallery/120_1751439493.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+      background-image: url('https://univjoy.com/uploads/gallery/120_1751439493.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    h3 {
+      font-size: 2em;
+      color: #ff0000;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.8em;
+      color: #aaa;
+      z-index: 1;
+    }
+
+    marquee {
+      margin-top: 10px;
+      color: #0f0;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 8px;
+      z-index: 2;
+    }
+
+    body.light-mode {
+      background: #fff url('https://univjoy.com/uploads/gallery/120_1751439493.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #000;
+    }
+
+    body.light-mode .overlay {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    body.light-mode h3 {
+      color: #d00;
+    }
+
+    body.light-mode p {
+      color: #111;
+    }
+
+    body.light-mode footer {
+      color: #222;
+    }
+
+    body.light-mode .toggle-btn {
+      background: #000;
+      color: #fff;
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: fall linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(100vh) translateX(30px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <button class="toggle-btn" onclick="toggleMode()">🌗 YUBIK Mode</button>
+
+  <div class="content">
+    <div class="circle-img"></div>
+    <h3>I’m the update they can’t install</h3>
+    <p>Oleh <strong>YUBIKOS Mr.MANDIPOS Mr.KOMAL,OS</strong><br>Your data is safe... until I get bored</p>
+
+    <marquee>
+      <font size="2">
+        <b>Greetz</b>: Mr.YUBIKOS - Mr.MANDIPOS Mr.KOMAL,OS - WE FORCE TO BE
+      </font>
+    </marquee>
+  </div>
+
+  <footer>all right fuckedup by (YUBIK)</footer>
+
+  <audio id="bgAudio" loop="">
+    <source src="https://files.catbox.moe/5jeg5g.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    alert("Everyday Normal GUY #YUBIK#");
+    alert("TEAM YUBIKOS");
+    alert("OPPS I THINK YOU HAVE BEING FUCKED ");
+
+    function toggleMode() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.style.left = Math.random() * window.innerWidth + 'px';
+      snowflake.style.animationDuration = (5 + Math.random() * 5) + 's';
+      snowflake.style.opacity = Math.random();
+      snowflake.style.width = snowflake.style.height = (4 + Math.random() * 4) + 'px';
+      document.body.appendChild(snowflake);
+      setTimeout(() => snowflake.remove(), 10000);
+    }
+
+    setInterval(createSnowflake, 150);
+
+    window.addEventListener('click', () => {
+      const audio = document.getElementById('bgAudio');
+      if (audio.paused) {
+        audio.play().catch(e => {
+          console.log('Autoplay gagal:', e);
+        });
+      }
+    }, { once: true });
+  </script>
+
+
+<div class="snowflake" style="left: 509.411px; animation-duration: 7.35011s; opacity: 0.576497; height: 6.68234px; width: 6.68234px;"></div><div class="snowflake" style="left: 292.566px; animation-duration: 6.80054s; opacity: 0.471382; height: 5.19882px; width: 5.19882px;"></div><div class="snowflake" style="left: 237.821px; animation-duration: 5.1666s; opacity: 0.220755; height: 7.60481px; width: 7.60481px;"></div><div class="snowflake" style="left: 216.846px; animation-duration: 6.29533s; opacity: 0.578885; height: 7.27241px; width: 7.27241px;"></div><div class="snowflake" style="left: 301.973px; animation-duration: 7.4559s; opacity: 0.102919; height: 6.11463px; width: 6.11463px;"></div><div class="snowflake" style="left: 491.363px; animation-duration: 9.46288s; opacity: 0.061777; height: 6.62697px; width: 6.62697px;"></div><div class="snowflake" style="left: 435.011px; animation-duration: 6.19498s; opacity: 0.0905996; height: 6.67445px; width: 6.67445px;"></div><div class="snowflake" style="left: 412.299px; animation-duration: 8.26836s; opacity: 0.352862; height: 7.35535px; width: 7.35535px;"></div><div class="snowflake" style="left: 311.877px; animation-duration: 8.86237s; opacity: 0.370612; height: 7.84793px; width: 7.84793px;"></div><div class="snowflake" style="left: 379.62px; animation-duration: 6.94461s; opacity: 0.969229; height: 4.77365px; width: 4.77365px;"></div><div class="snowflake" style="left: 265.955px; animation-duration: 8.36594s; opacity: 0.316005; height: 4.7183px; width: 4.7183px;"></div><div class="snowflake" style="left: 694.186px; animation-duration: 6.96901s; opacity: 0.817571; height: 5.25424px; width: 5.25424px;"></div><div class="snowflake" style="left: 536.825px; animation-duration: 9.5482s; opacity: 0.060066; height: 5.48409px; width: 5.48409px;"></div><div class="snowflake" style="left: 327.596px; animation-duration: 5.41973s; opacity: 0.808669; height: 5.44388px; width: 5.44388px;"></div><div class="snowflake" style="left: 524.362px; animation-duration: 7.08849s; opacity: 0.709345; height: 6.09057px; width: 6.09057px;"></div><div class="snowflake" style="left: 156.731px; animation-duration: 8.05872s; opacity: 0.133974; height: 4.74558px; width: 4.74558px;"></div><div class="snowflake" style="left: 384.816px; animation-duration: 7.62559s; opacity: 0.515612; height: 5.33852px; width: 5.33852px;"></div><div class="snowflake" style="left: 105.348px; animation-duration: 9.3222s; opacity: 0.699962; height: 4.65769px; width: 4.65769px;"></div><div class="snowflake" style="left: 594.318px; animation-duration: 7.41445s; opacity: 0.17179; height: 4.07036px; width: 4.07036px;"></div><div class="snowflake" style="left: 675.001px; animation-duration: 6.98905s; opacity: 0.410646; height: 4.29628px; width: 4.29628px;"></div><div class="snowflake" style="left: 675.506px; animation-duration: 8.17353s; opacity: 0.456325; height: 7.69223px; width: 7.69223px;"></div><div class="snowflake" style="left: 228.329px; animation-duration: 6.16567s; opacity: 0.956339; height: 5.81px; width: 5.81px;"></div><div class="snowflake" style="left: 136.477px; animation-duration: 8.90141s; opacity: 0.0123026; height: 6.72907px; width: 6.72907px;"></div><div class="snowflake" style="left: 665.313px; animation-duration: 6.99501s; opacity: 0.702375; height: 6.92426px; width: 6.92426px;"></div><div class="snowflake" style="left: 152.872px; animation-duration: 6.70245s; opacity: 0.938732; height: 7.90635px; width: 7.90635px;"></div><div class="snowflake" style="left: 104.854px; animation-duration: 5.19688s; opacity: 0.127999; height: 6.67313px; width: 6.67313px;"></div><div class="snowflake" style="left: 607.572px; animation-duration: 6.36415s; opacity: 0.605389; height: 4.89573px; width: 4.89573px;"></div><div class="snowflake" style="left: 491.219px; animation-duration: 8.97979s; opacity: 0.33764; height: 4.3682px; width: 4.3682px;"></div><div class="snowflake" style="left: 318.41px; animation-duration: 7.86014s; opacity: 0.219323; height: 4.24078px; width: 4.24078px;"></div><div class="snowflake" style="left: 133.43px; animation-duration: 9.00367s; opacity: 0.849413; height: 4.13999px; width: 4.13999px;"></div><div class="snowflake" style="left: 431.478px; animation-duration: 8.3736s; opacity: 0.33717; height: 7.57035px; width: 7.57035px;"></div><div class="snowflake" style="left: 448.055px; animation-duration: 6.15913s; opacity: 0.132031; height: 7.15198px; width: 7.15198px;"></div><div class="snowflake" style="left: 17.2323px; animation-duration: 8.45479s; opacity: 0.684349; height: 4.36966px; width: 4.36966px;"></div><div class="snowflake" style="left: 485.381px; animation-duration: 7.13478s; opacity: 0.0639107; height: 5.51991px; width: 5.51991px;"></div><div class="snowflake" style="left: 79.1789px; animation-duration: 9.83901s; opacity: 0.510328; height: 6.02908px; width: 6.02908px;"></div><div class="snowflake" style="left: 189.909px; animation-duration: 7.03776s; opacity: 0.726383; height: 7.75467px; width: 7.75467px;"></div><div class="snowflake" style="left: 413.352px; animation-duration: 5.08874s; opacity: 0.77459; height: 5.38145px; width: 5.38145px;"></div><div class="snowflake" style="left: 327.235px; animation-duration: 6.03338s; opacity: 0.456386; height: 4.35897px; width: 4.35897px;"></div><div class="snowflake" style="left: 197.637px; animation-duration: 6.04854s; opacity: 0.787785; height: 4.81623px; width: 4.81623px;"></div><div class="snowflake" style="left: 321.56px; animation-duration: 7.52453s; opacity: 0.168987; height: 4.58161px; width: 4.58161px;"></div><div class="snowflake" style="left: 297.633px; animation-duration: 8.6348s; opacity: 0.988938; height: 5.07234px; width: 5.07234px;"></div><div class="snowflake" style="left: 146.81px; animation-duration: 5.64072s; opacity: 0.36225; height: 4.15373px; width: 4.15373px;"></div><div class="snowflake" style="left: 136.306px; animation-duration: 8.83378s; opacity: 0.0472561; height: 6.1733px; width: 6.1733px;"></div><div class="snowflake" style="left: 714.921px; animation-duration: 9.10964s; opacity: 0.302096; height: 6.15179px; width: 6.15179px;"></div><div class="snowflake" style="left: 257.585px; animation-duration: 9.26696s; opacity: 0.950241; height: 6.51469px; width: 6.51469px;"></div><div class="snowflake" style="left: 456.053px; animation-duration: 7.69395s; opacity: 0.798382; height: 5.24227px; width: 5.24227px;"></div><div class="snowflake" style="left: 55.6423px; animation-duration: 5.15937s; opacity: 0.740468; height: 4.88257px; width: 4.88257px;"></div><div class="snowflake" style="left: 721.699px; animation-duration: 7.05585s; opacity: 0.482223; height: 5.04182px; width: 5.04182px;"></div><div class="snowflake" style="left: 275.227px; animation-duration: 6.54518s; opacity: 0.48725; height: 7.45877px; width: 7.45877px;"></div><div class="snowflake" style="left: 22.8296px; animation-duration: 5.5662s; opacity: 0.316506; height: 6.31837px; width: 6.31837px;"></div><div class="snowflake" style="left: 204.96px; animation-duration: 9.32469s; opacity: 0.805476; height: 5.15395px; width: 5.15395px;"></div><div class="snowflake" style="left: 192.391px; animation-duration: 8.70559s; opacity: 0.275379; height: 5.17704px; width: 5.17704px;"></div><div class="snowflake" style="left: 512.351px; animation-duration: 6.42455s; opacity: 0.970913; height: 4.3152px; width: 4.3152px;"></div><div class="snowflake" style="left: 206.801px; animation-duration: 5.56365s; opacity: 0.218139; height: 5.78655px; width: 5.78655px;"></div><div class="snowflake" style="left: 370.929px; animation-duration: 9.53385s; opacity: 0.446683; height: 6.77562px; width: 6.77562px;"></div><div class="snowflake" style="left: 608.156px; animation-duration: 6.89606s; opacity: 0.533753; height: 6.12056px; width: 6.12056px;"></div><div class="snowflake" style="left: 481.641px; animation-duration: 9.32541s; opacity: 0.751353; height: 4.3143px; width: 4.3143px;"></div><div class="snowflake" style="left: 718.619px; animation-duration: 6.86889s; opacity: 0.420386; height: 7.20256px; width: 7.20256px;"></div><div class="snowflake" style="left: 113.316px; animation-duration: 7.29149s; opacity: 0.0690623; height: 5.28888px; width: 5.28888px;"></div><div class="snowflake" style="left: 632.521px; animation-duration: 6.84689s; opacity: 0.739891; height: 6.1873px; width: 6.1873px;"></div><div class="snowflake" style="left: 345.84px; animation-duration: 7.94857s; opacity: 0.707965; height: 5.23949px; width: 5.23949px;"></div><div class="snowflake" style="left: 619.234px; animation-duration: 8.16329s; opacity: 0.022296; height: 7.39738px; width: 7.39738px;"></div><div class="snowflake" style="left: 427.97px; animation-duration: 5.39187s; opacity: 0.583568; height: 5.11618px; width: 5.11618px;"></div><div class="snowflake" style="left: 0.815075px; animation-duration: 7.36113s; opacity: 0.749675; height: 4.27534px; width: 4.27534px;"></div><div class="snowflake" style="left: 572.183px; animation-duration: 6.03314s; opacity: 0.278403; height: 7.94079px; width: 7.94079px;"></div><div class="snowflake" style="left: 705.649px; animation-duration: 7.97144s; opacity: 0.121156; height: 4.03738px; width: 4.03738px;"></div><div class="snowflake" style="left: 140.76px; animation-duration: 9.54499s; opacity: 0.589219; height: 5.07567px; width: 5.07567px;"></div><div class="snowflake" style="left: 430.463px; animation-duration: 5.23481s; opacity: 0.621099; height: 7.37327px; width: 7.37327px;"></div><div class="snowflake" style="left: 806.246px; animation-duration: 9.40147s; opacity: 0.715268; height: 7.6881px; width: 7.6881px;"></div><div class="snowflake" style="left: 188.869px; animation-duration: 5.38072s; opacity: 0.524476; height: 6.52682px; width: 6.52682px;"></div><div class="snowflake" style="left: 257.056px; animation-duration: 6.90741s; opacity: 0.151413; height: 4.73899px; width: 4.73899px;"></div><div class="snowflake" style="left: 454.429px; animation-duration: 9.68355s; opacity: 0.504904; height: 4.11605px; width: 4.11605px;"></div><div class="snowflake" style="left: 150.792px; animation-duration: 8.8638s; opacity: 0.93072; height: 4.72633px; width: 4.72633px;"></div><div class="snowflake" style="left: 486.199px; animation-duration: 9.53788s; opacity: 0.265624; height: 7.03185px; width: 7.03185px;"></div><div class="snowflake" style="left: 463.259px; animation-duration: 9.40918s; opacity: 0.940105; height: 4.35154px; width: 4.35154px;"></div><div class="snowflake" style="left: 242.687px; animation-duration: 6.77075s; opacity: 0.529465; height: 6.31525px; width: 6.31525px;"></div><div class="snowflake" style="left: 201.574px; animation-duration: 6.06838s; opacity: 0.798355; height: 6.16727px; width: 6.16727px;"></div><div class="snowflake" style="left: 630.272px; animation-duration: 8.41402s; opacity: 0.840466; height: 7.10306px; width: 7.10306px;"></div><div class="snowflake" style="left: 1112.49px; animation-duration: 7.22884s; opacity: 0.0977968; height: 5.90755px; width: 5.90755px;"></div><div class="snowflake" style="left: 385.38px; animation-duration: 8.8695s; opacity: 0.841467; height: 6.12512px; width: 6.12512px;"></div><div class="snowflake" style="left: 439.507px; animation-duration: 9.9276s; opacity: 0.392353; height: 4.10381px; width: 4.10381px;"></div><div class="snowflake" style="left: 701.62px; animation-duration: 5.98341s; opacity: 0.855765; height: 6.93456px; width: 6.93456px;"></div><div class="snowflake" style="left: 628.499px; animation-duration: 7.69382s; opacity: 0.0639586; height: 5.46591px; width: 5.46591px;"></div><div class="snowflake" style="left: 406.579px; animation-duration: 9.18125s; opacity: 0.922636; height: 4.10242px; width: 4.10242px;"></div><div class="snowflake" style="left: 121.556px; animation-duration: 7.08376s; opacity: 0.89092; height: 7.81399px; width: 7.81399px;"></div><div class="snowflake" style="left: 20.1851px; animation-duration: 7.10472s; opacity: 0.093738; height: 6.03509px; width: 6.03509px;"></div><div class="snowflake" style="left: 723.425px; animation-duration: 8.98329s; opacity: 0.567902; height: 5.6347px; width: 5.6347px;"></div><div class="snowflake" style="left: 619.84px; animation-duration: 7.2892s; opacity: 0.234764; height: 5.13254px; width: 5.13254px;"></div><div class="snowflake" style="left: 648.239px; animation-duration: 5.67844s; opacity: 0.925433; height: 6.91921px; width: 6.91921px;"></div><div class="snowflake" style="left: 488.831px; animation-duration: 7.95312s; opacity: 0.606707; height: 7.01482px; width: 7.01482px;"></div><div class="snowflake" style="left: 168.36px; animation-duration: 7.07374s; opacity: 0.880105; height: 4.97509px; width: 4.97509px;"></div><div class="snowflake" style="left: 402.37px; animation-duration: 9.94521s; opacity: 0.400152; height: 7.24263px; width: 7.24263px;"></div><div class="snowflake" style="left: 15.7975px; animation-duration: 9.01376s; opacity: 0.788653; height: 5.89998px; width: 5.89998px;"></div><div class="snowflake" style="left: 55.5629px; animation-duration: 9.12071s; opacity: 0.0788898; height: 7.15987px; width: 7.15987px;"></div><div class="snowflake" style="left: 295.828px; animation-duration: 7.27001s; opacity: 0.10745; height: 7.00738px; width: 7.00738px;"></div><div class="snowflake" style="left: 180.504px; animation-duration: 6.73582s; opacity: 0.203306; height: 7.09598px; width: 7.09598px;"></div><div class="snowflake" style="left: 117.023px; animation-duration: 7.74468s; opacity: 0.723507; height: 4.89123px; width: 4.89123px;"></div><div class="snowflake" style="left: 118.207px; animation-duration: 8.73099s; opacity: 0.626121; height: 7.08834px; width: 7.08834px;"></div><div class="snowflake" style="left: 332.342px; animation-duration: 5.02224s; opacity: 0.366125; height: 6.59007px; width: 6.59007px;"></div><div class="snowflake" style="left: 315.382px; animation-duration: 6.7539s; opacity: 0.593935; height: 7.96178px; width: 7.96178px;"></div><div class="snowflake" style="left: 647.255px; animation-duration: 7.84594s; opacity: 0.330047; height: 5.24976px; width: 5.24976px;"></div><div class="snowflake" style="left: 619.507px; animation-duration: 5.71636s; opacity: 0.420942; height: 5.29151px; width: 5.29151px;"></div><div class="snowflake" style="left: 603.491px; animation-duration: 5.09942s; opacity: 0.709915; height: 4.09863px; width: 4.09863px;"></div><div class="snowflake" style="left: 369.209px; animation-duration: 5.59587s; opacity: 0.866026; height: 5.88288px; width: 5.88288px;"></div><div class="snowflake" style="left: 618.382px; animation-duration: 5.64605s; opacity: 0.315604; height: 6.58784px; width: 6.58784px;"></div><div class="snowflake" style="left: 404.609px; animation-duration: 7.4772s; opacity: 0.271244; height: 5.00881px; width: 5.00881px;"></div><div class="snowflake" style="left: 211.398px; animation-duration: 7.59361s; opacity: 0.0320831; height: 5.91585px; width: 5.91585px;"></div><div class="snowflake" style="left: 138.433px; animation-duration: 9.28971s; opacity: 0.176241; height: 5.96408px; width: 5.96408px;"></div><div class="snowflake" style="left: 636.871px; animation-duration: 6.33929s; opacity: 0.0621907; height: 5.41938px; width: 5.41938px;"></div><div class="snowflake" style="left: 45.3722px; animation-duration: 7.02658s; opacity: 0.224361; height: 4.42362px; width: 4.42362px;"></div><div class="snowflake" style="left: 282.673px; animation-duration: 5.10299s; opacity: 0.74582; height: 6.2324px; width: 6.2324px;"></div><div class="snowflake" style="left: 17.1431px; animation-duration: 7.96065s; opacity: 0.750621; height: 6.64006px; width: 6.64006px;"></div><div class="snowflake" style="left: 119.601px; animation-duration: 9.5418s; opacity: 0.510711; height: 6.29001px; width: 6.29001px;"></div><div class="snowflake" style="left: 92.5898px; animation-duration: 5.01125s; opacity: 0.601616; height: 5.1717px; width: 5.1717px;"></div><div class="snowflake" style="left: 98.1159px; animation-duration: 8.10994s; opacity: 0.0709236; height: 7.34472px; width: 7.34472px;"></div><div class="snowflake" style="left: 450.503px; animation-duration: 5.46355s; opacity: 0.154458; height: 7.05055px; width: 7.05055px;"></div><div class="snowflake" style="left: 265.132px; animation-duration: 7.7718s; opacity: 0.184603; height: 4.88478px; width: 4.88478px;"></div><div class="snowflake" style="left: 506.393px; animation-duration: 8.27769s; opacity: 0.461277; height: 7.02926px; width: 7.02926px;"></div><div class="snowflake" style="left: 295.446px; animation-duration: 5.90571s; opacity: 0.203485; height: 5.5206px; width: 5.5206px;"></div><div class="snowflake" style="left: 683.357px; animation-duration: 6.27736s; opacity: 0.0984989; height: 6.50653px; width: 6.50653px;"></div><div class="snowflake" style="left: 320.803px; animation-duration: 5.78682s; opacity: 0.519569; height: 4.86719px; width: 4.86719px;"></div><div class="snowflake" style="left: 93.3745px; animation-duration: 8.22113s; opacity: 0.381515; height: 6.63423px; width: 6.63423px;"></div><div class="snowflake" style="left: 22.6561px; animation-duration: 5.01399s; opacity: 0.389539; height: 6.10616px; width: 6.10616px;"></div><div class="snowflake" style="left: 195.407px; animation-duration: 6.33684s; opacity: 0.723666; height: 7.83498px; width: 7.83498px;"></div><div class="snowflake" style="left: 620.724px; animation-duration: 8.07249s; opacity: 0.364029; height: 4.37554px; width: 4.37554px;"></div><div class="snowflake" style="left: 693.971px; animation-duration: 9.17773s; opacity: 0.943077; height: 6.48713px; width: 6.48713px;"></div><div class="snowflake" style="left: 413.255px; animation-duration: 8.39905s; opacity: 0.126122; height: 5.32336px; width: 5.32336px;"></div><div class="snowflake" style="left: 695.721px; animation-duration: 6.74992s; opacity: 0.275315; height: 6.35522px; width: 6.35522px;"></div><div class="snowflake" style="left: 289.821px; animation-duration: 8.31508s; opacity: 0.0481481; height: 5.80792px; width: 5.80792px;"></div><div class="snowflake" style="left: 413.709px; animation-duration: 7.38218s; opacity: 0.529292; height: 6.19778px; width: 6.19778px;"></div><div class="snowflake" style="left: 445.016px; animation-duration: 7.70174s; opacity: 0.921952; height: 5.48778px; width: 5.48778px;"></div><div class="snowflake" style="left: 339.966px; animation-duration: 8.24507s; opacity: 0.627029; height: 6.47218px; width: 6.47218px;"></div><div class="snowflake" style="left: 433.826px; animation-duration: 9.42942s; opacity: 0.20236; height: 7.42055px; width: 7.42055px;"></div><div class="snowflake" style="left: 135.081px; animation-duration: 5.88021s; opacity: 0.236864; height: 4.08593px; width: 4.08593px;"></div></body></html>
